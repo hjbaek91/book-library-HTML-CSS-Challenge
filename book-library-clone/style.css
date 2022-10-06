@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333638;
+}
+
+.container {
+  width: 500px;
+  height: 100%;
+  background-image: url(https://designimages.appypie.com/appbackground/appbackground-60-flare-light.jpg);
+  /*   padding: 15px 30px 15px 30px; */
+  margin: 0 auto;
+}
+
+/* -------------------------------- */
+/* Nav + Search Bar */
+/* -------------------------------- */
+
+.nav {
+  position: relative;
+  background-color: #ffce33;
+  padding: 20px 20px 25px 15px;
+  margin-bottom: 60px;
+}
+
+.nav__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.nav__search {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin: 10px auto 0px 110px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  box-shadow: 0 4px 2px -4px gray;
+}
+
+.fa-search {
+  color: #aaa7a7;
+}
+
+.nav__search-bar,
+fa-search,
+.book-recommend__author {
+  opacity: 0.3;
+}
+
+/* -------------------------------- */
+/* Book of the day */
+/* -------------------------------- */
+
+.book-container {
+  display: flex;
+  justify-content: center;
+}
+
+.book-recommend {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.book-recommend__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-recommend__cover {
+  content: url(https://w.namu.la/s/b085fc843022ba7420e147d4831df82b9371df4952e1ae8f0819f71ca20912f0991376da532ae72d68d9089024e63b2ec2b47f24bcbf2c2b293d5fe6d919bf9aff26843a5888421dbeab7877830f2ce5a330cd7d989eeaa760e0cbac88acee9f8789443b4b67e074282d7889a7ef730b);
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 5%;
+}
+
+.book-recommend__data {
+  line-height: 35px;
+}
+
+.book-recommend__title {
+  font-size: 30px;
+}
+
+.book-recommend__author {
+  font-size: 20px;
+}
+
+.fa-star {
+  color: #ffce33;
+  margin-bottom: 31px;
+}
+
+.book-recommend__btn-info {
+  margin-bottom: 25px;
+}
+
+.book-recommend__btn-journey,
+.book-recommend__btn-bio {
+  width: 27px;
+  height: 20px;
+  background-color: #f7f8f7;
+  opacity: 1;
+  border-radius: 5px;
+  padding: 3px 30px;
+}
+
+.book-recommend__btn-buy {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.book-recommend__btn-bookmark {
+  width: 50px;
+  height: 50px;
+  background-color: #ffce33;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-bookmark {
+  font-size: 22px;
+}
+
+.book-recommend__btn-booking {
+  background-color: #343232;
+  border-radius: 5px;
+  padding: 3px 30px;
+  color: #d1d1d1;
+}
+
+/* -------------------------------- */
+/* Top Adventurers */
+/* -------------------------------- */
+
+.genre-container {
+  margin-left: 25px;
+}
+
+.book-genre__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 35px;
+  overflow-x: hidden;
+  line-height: 10px;
+}
+
+.book-genre__info {
+  /*   display: flex;
+  flex-direction: column; */
+  gap: 10px;
+}
+
+.book-genre__cover {
+  height: auto;
+  width: auto;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+
+.cover__1 {
+  content: url(https://cdn.myanimelist.net/images/manga/2/253146.jpg);
+}
+
+.cover__2 {
+  content: url(https://cdn.myanimelist.net/images/manga/3/80661.jpg);
+}
+
+.cover__3 {
+  content: url(https://cdn.myanimelist.net/images/manga/1/209370.jpg);
+}
+
+.cover__4 {
+  content: url(https://cdn.myanimelist.net/images/manga/2/188925.jpg);
+}
+
+/* -------------------------------- */
+/* Popular Authors */
+/* -------------------------------- */
+
+.author-container {
+  margin-left: 25px;
+}
+
+.book-author__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-author__image {
+  content: url(https://biographyhost.com/uploads/images/Akira-Toriyama-q.jpg);
+  height: auto;
+  width: auto;
+  max-width: 180px;
+  max-height: 180px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.book-author__description {
+  line-height: 35px;
+  /*   display: flex;
+  flex-direction: column; */
+}
+
+.book-author__name {
+  font-size: 30px;
+}
+
+.book-author__intro {
+  font-size: 20px;
+  opacity: 0.3;
+  line-height: 20px;
+}
